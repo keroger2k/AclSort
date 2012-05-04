@@ -16,7 +16,7 @@ describe("acl application", function() {
   });
 
   describe("given a list of arrays with octets in them", function() {
-  	it("should sort a list numerically", function() {
+  	it("should sort list numerically", function() {
   		expect(app.arraySort([
   			[9,10,11,12],
   			[1,2,3,4],
@@ -28,7 +28,7 @@ describe("acl application", function() {
   		]);
   	});
 
-  	it("should sort a list by the first octect that is different", function() {
+  	it("should sort list by the first octect that is different", function() {
   		expect(app.arraySort([
   			[1,21,11,12],
   			[1,2,3,4],

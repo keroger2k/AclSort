@@ -25,10 +25,12 @@ App.prototype.arraySort = function(addresses){
 App.prototype.sortAddresses = function(addresses){
 	var octetArray = [];
 	var sortedArray = [];
-	var temp; 
+	var temp;
+
 	for(var i = 0; i < addresses.length; i++) {
-		octetArray.push(this.parseIp(addresses[i]));
+	 	octetArray.push(this.parseIp(addresses[i]));
 	}
+	
 	temp = this.arraySort(octetArray);
 	for(var j = 0; j < temp.length; j++) {
 		sortedArray.push(temp[j].join('.'));
